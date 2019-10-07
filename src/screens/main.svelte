@@ -43,7 +43,7 @@
 <style>
   .main {
     display: grid;
-    grid-template-rows: 134px 1fr 373px;
+    grid-template-rows: calc(9vh + 23px) 1fr 373px;
     height: 100vh;
   }
   .main-current {

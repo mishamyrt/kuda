@@ -23,7 +23,7 @@
 
 <style>
   .history {
-    height: 106px;
+    height: 9vh;
     padding-top: 20px;
     border-bottom: 1px solid var(--color-line);
     padding-bottom: 2px;
