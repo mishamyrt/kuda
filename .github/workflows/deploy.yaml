@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Install dependencies
+      run: npm ci
+    - name: Build static files
+      run: npm run build
+    - name: Upload results
+      uses: actions/upload-artifact@v1
+      with:
+        name: dist
+        path: dist/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download build
+      uses: actions/download-artifact@v1
+      with:
+        name: dist
+    - name: Deploy
+      uses: crazy-max/ghaction-github-pages@master
+      with:
+        target_branch: gh-pages
+        build_dir: dist
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
