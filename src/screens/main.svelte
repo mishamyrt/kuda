@@ -56,6 +56,8 @@
   .main-inputValue {
     font-size: 82px;
     font-weight: 300;
+    max-width: 87vw;
+    overflow-x: scroll;
     height: 96px;
     text-align: right;
   }
