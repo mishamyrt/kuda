@@ -5,6 +5,9 @@
   "display": "standalone",
   "orientation": "portrait",
   "android_package_name":"co.myrt.kuda",
+  "serviceworker": {
+    "src": "worker.js"
+  },
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
