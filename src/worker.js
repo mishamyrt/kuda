@@ -1,5 +1,5 @@
 /* global self, caches, fetch */
-const cacheKey = 'CACHE_KEY_VALUE'
+const cacheKey = '97f76e0d3561c373fe3e'
 
 const clearCache = () => caches.keys()
   .then(keys => keys.filter(key => key !== cacheKey))
