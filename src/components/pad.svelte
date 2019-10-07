@@ -7,16 +7,19 @@
   let substract = false;
 
   function submitInput(event) {
+    window.navigator.vibrate(60)
     dispatch("input", {
       value: event.target.innerText
     });
   }
 
   function submitDelete(event) {
+    window.navigator.vibrate(60)
     dispatch("delete");
   }
 
   function submitOperation(event) {
+    window.navigator.vibrate(60)
     dispatch("operationChange", {
       substract
     });
