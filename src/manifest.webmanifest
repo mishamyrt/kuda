@@ -4,6 +4,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
+  "start_url": "/kuda",
   "orientation": "portrait",
   "android_package_name":"co.myrt.kuda",
   "serviceworker": {
