@@ -4,8 +4,6 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
   "android_package_name":"co.myrt.kuda",
   "icons": [
     {
