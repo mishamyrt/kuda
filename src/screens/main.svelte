@@ -25,9 +25,13 @@
   }
 
   function addOperation(event) {
+    let wasPositive = availableToday > 0
     service.addOperation(parseInt(input), substract)
     input = ''
     availableToday = parseInt(service.availableToday)
+    if (wasPositive && availableToday < 0) {
+      window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
+    }
     history = service.history
   }
 
