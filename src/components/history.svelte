@@ -60,7 +60,7 @@
         Сегодня
         <b>{getTime(item.date)}</b>
       </span>
-      <span class="history-amount">{item.amount}</span>
+      <span class="history-amount">{#if item.substract}-{/if}{item.amount}</span>
     </div>
   {/each}
 </div>
