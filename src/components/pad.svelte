@@ -59,6 +59,9 @@
     top: -23px;
     left: 13px;
   }
+  .pad-button svg {
+    stroke: var(--color-blue);
+  }
   .pad-button:active::after {
     transform: scale(1.2);
     transition: background-color .005s ease-out, transform 2s ease-out;
@@ -86,12 +89,11 @@
   {/if}
 
   <button on:click={submitInput} class="pad-button">0</button>
-  <button on:click={submitDelete} class="pad-button">
+  <button on:click={submitDelete} class="pad-button __delete">
     <svg
       width="44"
       height="35"
       viewBox="0 0 44 35"
-      stroke="#4285F4"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M1.60896 17.5618H43.1975M1.18359 16.5004L18.08 33.3969M1.18359

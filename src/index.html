@@ -17,20 +17,38 @@
     * {
       font-family: 'Roboto';
     }
+
+    :root {
+      --color-background: white;
+      --color-text: black;
+      --color-text-secondary: #979797;
+      --color-blue: #2196F3;
+      --color-line: #DFDFDF;
+      --color-green: #689F38;
+      --color-green-secondary: #8BC34A;
+      --color-red: #FF1744;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #202125;
+        --color-text: #E2E2E3;
+        --color-text-secondary: #929294;
+        --color-blue: #64B5F6;
+        --color-line: #313131;
+        --color-green: #C5E1A5;
+        --color-green-secondary: rgba(197, 225, 165, 0.48);
+        --color-red: #FF8A80;
+      }
+    }
+
     body {
       -webkit-font-smoothing: antialiased;
       padding: 0;
+      background-color: var(--color-background);
+      color: var(--color-text);
       margin: 0 20px 0;
       overflow: hidden;
-    }
-
-    :root {
-      --color-blue: #4285F4;
-      --color-line: #DFDFDF;
-      --color-gray: #757575;
-      --color-green-tint: #81C784;
-      --color-green: #4CAF50;
-      --color-red: #FF1744;
     }
   </style>
   <script src="./main.js"></script>

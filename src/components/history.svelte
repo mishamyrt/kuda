@@ -36,11 +36,11 @@
     justify-content: space-between;
   }
   .history-time {
-    color: var(--color-gray)
+    color: var(--color-text-secondary);
   }
 
   .history-time b {
-    color: black
+    color: var(--color-text);
   }
 
   .history-item.__add,
@@ -49,7 +49,7 @@
   }
 
   .history-item.__add .history-time {
-    color: var(--color-green-tint)
+    color: var(--color-green-secondary)
   }
 </style>
 

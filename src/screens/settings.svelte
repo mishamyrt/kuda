@@ -7,7 +7,7 @@
   }
 
   .settigns-caption {
-    color: var(--color-gray);
+    color: var(--color-text-secondary);
     text-align: center;
   }
 
